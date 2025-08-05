@@ -54,7 +54,7 @@ gradle clean test
 clean test 
 ```
 
-## <img alt="Allure" height="25" src="media/Allure.svg" width="25"/></a>  <a name="Allure"></a>Allure [Report](https://jenkins.autotests.cloud/job/vimeo_autotests/30/allure/)	</a>
+## <img alt="Allure" height="25" src="media/Allure.svg" width="25"/></a>  <a name="Allure"></a>Allure [Report](https://jenkins.autotests.cloud/job/wikipedia_mobile_autotests/1/allure/)	</a>
 
 
 ## Основная страница отчёта
