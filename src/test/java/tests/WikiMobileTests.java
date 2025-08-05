@@ -1,5 +1,7 @@
 package tests;
 
+import io.qameta.allure.Owner;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.ArticlePage;
 import pages.MainPage;
@@ -9,6 +11,8 @@ import static io.qameta.allure.Allure.step;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
+@Owner("p.barinova")
+@DisplayName("Проверки мобильного приложения Wikipedia")
 public class WikiMobileTests extends TestBase {
 
     MainPage mainPage = new MainPage();
@@ -16,6 +20,7 @@ public class WikiMobileTests extends TestBase {
     ArticlePage articlePage = new ArticlePage();
 
     @Test
+    @DisplayName("Проверка поиска статьи")
     void successfulSearchTest() {
         step("Ввести запрос в поисковую строку", () -> {
             mainPage.clickSearchIcon();
@@ -27,6 +32,7 @@ public class WikiMobileTests extends TestBase {
     }
 
     @Test
+    @DisplayName("Проверка открытия статьи")
     void openArticleTest() {
         step("Открыть поиск и ввести запрос", () -> {
             mainPage.clickSearchIcon();
@@ -39,6 +45,7 @@ public class WikiMobileTests extends TestBase {
     }
 
     @Test
+    @DisplayName("Проверка открытия изображения внутри статьи")
     public void testOpenImage() {
         step("Открыть поиск и ввести запрос", () -> {
             mainPage.clickSearchIcon();
@@ -61,6 +68,7 @@ public class WikiMobileTests extends TestBase {
     }
 
     @Test
+    @DisplayName("Проверка возврата к главной странице после просмотра статьи")
     public void testReturnToMainPageAfterOpeningArticle() {
         step("Открыть поиск и ввести запрос", () -> {
             mainPage.clickSearchIcon();
