@@ -69,16 +69,14 @@ clean test
 <img title="Allure Suites" src="media/testcase.jpg" width="850">  
 </p>  
 
-____
 ## <img alt="Allure" height="25" src="media/Telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
-____
+
 <p align="center">  
 <img title="Allure Overview Dashboard" src="media/tgAllert.jpg" width="550">  
 </p>
 
-____
-## </a> Пример видео выполнения тестов 
-____
+## Пример видео выполнения тестов 
+
 <p align="center">
-<img title="Selenoid Video" src="media/test_video.gif" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src="media/test_video.gif" height="450"  alt="video">   
 </p>
