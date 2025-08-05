@@ -13,22 +13,18 @@
 <a id="tools"></a>
 ## Технологии и инструменты:
 
-<table>
-  <tr>
-    <td align="center"><img src="media/java-svgrepo-com.svg" width="50" height="50" alt="Java"/><br>Java</td>
-    <td align="center"><img src="media/intellij-idea-svgrepo-com.svg" width="50" height="50" alt="IDEA"/><br>IntelliJ IDEA</td>
-    <td align="center"><img src="media/github-badge-svgrepo-com.svg" width="50" height="50" alt="GitHub"/><br>GitHub</td>
-    <td align="center"><img src="media/Junit5.svg" width="50" height="50" alt="JUnit 5"/><br>JUnit 5</td>
-    <td align="center"><img src="media/gradle-svgrepo-com.svg" width="50" height="50" alt="Gradle"/><br>Gradle</td>
-  </tr>
-  <tr>
-    <td align="center"><img src="media/Selenide.svg" width="50" height="50" alt="Selenide"/><br>Selenide</td>
-    <td align="center"><img src="media/browserstack.svg" width="50" height="50" alt="Browserstack"/><br>Browserstack</td>
-    <td align="center"><img src="media/Allure.svg" width="50" height="50" alt="Allure"/><br>Allure Report</td>
-    <td align="center"><img src="media/Jenkins.svg" width="50" height="50" alt="Jenkins"/><br>Jenkins</td>
-    <td align="center"><img src="media/Telegram.svg" width="50" height="50" alt="Telegram"/><br>Telegram</td>
-  </tr>
-</table>
+<p align="center">
+  <img width="8%" title="Java" src="media/java-svgrepo-com.svg">
+  <img width="8%" title="IntelliJ IDEA" src="media/intellij-idea-svgrepo-com.svg">
+  <img width="8%" title="GitHub" src="media/github-badge-svgrepo-com.svg">
+  <img width="8%" title="JUnit 5" src="media/Junit5.svg">
+  <img width="8%" title="Gradle" src="media/gradle-svgrepo-com.svg">
+  <img width="8%" title="Selenide" src="media/Selenide.svg">
+  <img width="8%" title="Browserstack" src="media/browserstack.svg">
+  <img width="8%" title="Allure Report" src="media/Allure.svg">
+  <img width="8%" title="Jenkins" src="media/Jenkins.svg">
+  <img width="8%" title="Telegram" src="media/Telegram.svg">
+</p>
 
 <a id="cases"></a>
 ## Реализованные проверки:
