@@ -14,16 +14,16 @@
 ## Технологии и инструменты:
 
 <p align="center">
-  <img width="8%" title="Java" src="media/java-svgrepo-com.svg">
-  <img width="8%" title="IntelliJ IDEA" src="media/intellij-idea-svgrepo-com.svg">
-  <img width="8%" title="GitHub" src="media/github-badge-svgrepo-com.svg">
-  <img width="8%" title="JUnit 5" src="media/Junit5.svg">
-  <img width="8%" title="Gradle" src="media/gradle-svgrepo-com.svg">
-  <img width="8%" title="Selenide" src="media/Selenide.svg">
-  <img width="8%" title="Browserstack" src="media/browserstack.svg">
-  <img width="8%" title="Allure Report" src="media/Allure.svg">
-  <img width="8%" title="Jenkins" src="media/Jenkins.svg">
-  <img width="8%" title="Telegram" src="media/Telegram.svg">
+  <a href="https://www.java.com/"><img width="8%" title="Java" src="media/java-svgrepo-com.svg"></a>
+  <a href="https://www.jetbrains.com/idea/"><img width="8%" title="IntelliJ IDEA" src="media/intellij-idea-svgrepo-com.svg"></a>
+  <a href="https://github.com/"><img width="8%" title="GitHub" src="media/github-badge-svgrepo-com.svg"></a>
+  <a href="https://junit.org/junit5/"><img width="8%" title="JUnit 5" src="media/Junit5.svg"></a>
+  <a href="https://gradle.org/"><img width="8%" title="Gradle" src="media/gradle-svgrepo-com.svg"></a>
+  <a href="https://qameta.io/"><img width="8%" title="Allure Report" src="media/Allure.svg"></a>
+  <a href="https://www.jenkins.io/"><img width="8%" title="Jenkins" src="media/Jenkins.svg"></a>
+  <a href="https://web.telegram.org/"><img width="8%" title="Telegram" src="media/Telegram.svg"></a>
+  <a href="https://ru.selenide.org/"><img width="8%" title="Selenide" src="media/Selenide.svg"></a>
+  <a href="https://www.browserstack.com/"><img width="8%" title="Browserstack" src="media/browserstack.svg"></a>
 </p>
 
 <a id="cases"></a>
@@ -37,7 +37,7 @@
 
 
 <p align="center">  
-<img src="media/JenkinsBuild.jpg" alt="Jenkins" width="950"/></a>  
+<img src="media/JenkinsBuild.jpg" alt="Jenkins" width="950"/>  
 </p>
 
 ## Команда для запуска из терминала

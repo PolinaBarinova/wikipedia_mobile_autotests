@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.$$;
 import static io.appium.java_client.AppiumBy.className;
 import static io.appium.java_client.AppiumBy.id;
 
-public class ArticlePage {
+public class ArticleScreen {
 
     private final SelenideElement headerImage = $(id("org.wikipedia.alpha:id/view_page_header_image"));
     private final SelenideElement imageView = $(id("org.wikipedia.alpha:id/imageView"));
@@ -30,7 +30,7 @@ public class ArticlePage {
     }
 
     @Step("Нажать на главное изображение статьи")
-    public ArticlePage clickMainImage() {
+    public ArticleScreen clickMainImage() {
         headerImage.shouldBe(visible).click();
         return this;
     }
@@ -47,7 +47,7 @@ public class ArticlePage {
     }
 
     @Step("Вернуться назад")
-    public ArticlePage navigateBack() {
+    public ArticleScreen navigateBack() {
         com.codeborne.selenide.Selenide.back();
         return this;
     }

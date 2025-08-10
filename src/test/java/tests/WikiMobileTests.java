@@ -3,9 +3,9 @@ package tests;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pages.ArticlePage;
-import pages.MainPage;
-import pages.SearchPage;
+import pages.ArticleScreen;
+import pages.MainScreen;
+import pages.SearchScreen;
 
 import static io.qameta.allure.Allure.step;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -15,19 +15,19 @@ import static org.junit.jupiter.api.Assertions.fail;
 @DisplayName("Проверки мобильного приложения Wikipedia")
 public class WikiMobileTests extends TestBase {
 
-    MainPage mainPage = new MainPage();
-    SearchPage searchPage = new SearchPage();
-    ArticlePage articlePage = new ArticlePage();
+    MainScreen mainScreen = new MainScreen();
+    SearchScreen searchScreen = new SearchScreen();
+    ArticleScreen articleScreen = new ArticleScreen();
 
     @Test
     @DisplayName("Проверка поиска статьи")
     void successfulSearchTest() {
         step("Ввести запрос в поисковую строку", () -> {
-            mainPage.clickSearchIcon();
-            searchPage.enterSearchValue("Lady Gaga");
+            mainScreen.clickSearchIcon();
+            searchScreen.enterSearchValue("Lady Gaga");
         });
         step("Проверить результаты поиска", () -> {
-            searchPage.checkSearchResult();
+            searchScreen.checkSearchResult();
         });
     }
 
@@ -35,12 +35,12 @@ public class WikiMobileTests extends TestBase {
     @DisplayName("Проверка открытия статьи")
     void openArticleTest() {
         step("Открыть поиск и ввести запрос", () -> {
-            mainPage.clickSearchIcon();
-            searchPage.enterSearchValue("Lady Gaga");
+            mainScreen.clickSearchIcon();
+            searchScreen.enterSearchValue("Lady Gaga");
         });
-        step("Открыть первую статью", searchPage::selectFirstSearchResult);
+        step("Открыть первую статью", searchScreen::selectFirstSearchResult);
         step("Проверить, что статья открыта", () -> {
-            articlePage.getArticleTitle("Lady Gaga");
+            articleScreen.getArticleTitle("Lady Gaga");
         });
     }
 
@@ -48,36 +48,36 @@ public class WikiMobileTests extends TestBase {
     @DisplayName("Проверка открытия изображения внутри статьи")
     public void testOpenImage() {
         step("Открыть поиск и ввести запрос", () -> {
-            mainPage.clickSearchIcon();
-            searchPage.enterSearchValue("Lady Gaga");
+            mainScreen.clickSearchIcon();
+            searchScreen.enterSearchValue("Lady Gaga");
         });
-        step("Открыть первую статью", searchPage::selectFirstSearchResult);
+        step("Открыть первую статью", searchScreen::selectFirstSearchResult);
         step("Проверить, что статья открыта", () -> {
-            articlePage.getArticleTitle("Lady Gaga");
+            articleScreen.getArticleTitle("Lady Gaga");
         });
         step("Проверить загрузку статьи и открыть изображение, если статья загрузилась", () -> {
-            boolean isArticleLoaded = articlePage.waitForArticleOrHandleError();
+            boolean isArticleLoaded = articleScreen.waitForArticleOrHandleError();
             if (!isArticleLoaded) {
                 fail("Статья не загрузилась, тест завершен");
             }
-            articlePage.clickMainImage();
+            articleScreen.clickMainImage();
         });
         step("Проверить, что изображение открыто на весь экран", () -> {
-            assertTrue(articlePage.isImageOpenedFullscreen());
+            assertTrue(articleScreen.isImageOpenedFullscreen());
         });
     }
 
     @Test
     @DisplayName("Проверка возврата к главной странице после просмотра статьи")
-    public void testReturnToMainPageAfterOpeningArticle() {
+    public void testReturnToMainScreenAfterOpeningArticle() {
         step("Открыть поиск и ввести запрос", () -> {
-            mainPage.clickSearchIcon();
-            searchPage.enterSearchValue("Lady Gaga");
+            mainScreen.clickSearchIcon();
+            searchScreen.enterSearchValue("Lady Gaga");
         });
-        step("Открыть первую статью", searchPage::selectFirstSearchResult);
-        step("Вернуться на главную", articlePage::navigateBack);
+        step("Открыть первую статью", searchScreen::selectFirstSearchResult);
+        step("Вернуться на главную", articleScreen::navigateBack);
         step("Проверить, что отображается главный экран", () -> {
-            mainPage.shouldBeOnMainPage();
+            mainScreen.shouldBeOnMainScreen();
         });
     }
 }

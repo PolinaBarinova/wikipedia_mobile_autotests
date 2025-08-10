@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.appium.java_client.AppiumBy.id;
 
-public class SearchPage {
+public class SearchScreen {
 
     private final SelenideElement searchInput = $(id("org.wikipedia.alpha:id/search_src_text"));
     private final ElementsCollection searchResult = $$(id("org.wikipedia.alpha:id/page_list_item_title"));

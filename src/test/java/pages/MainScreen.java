@@ -10,19 +10,19 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.appium.java_client.AppiumBy.id;
 
-public class MainPage {
+public class MainScreen {
 
     private final SelenideElement search_container = $(id("org.wikipedia.alpha:id/search_container"));
     private final ElementsCollection card = $$(id("org.wikipedia.alpha:id/view_card_header_title"));
 
     @Step("Нажать на поле поиска")
-    public MainPage clickSearchIcon() {
+    public MainScreen clickSearchIcon() {
         search_container.click();
         return this;
     }
 
     @Step("Проверить, что отображается главная страница")
-    public MainPage shouldBeOnMainPage() {
+    public MainScreen shouldBeOnMainScreen() {
         card.findBy(text("In the News")).shouldBe(Condition.visible);
         return this;
     }
